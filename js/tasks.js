@@ -15,7 +15,7 @@ const question = () => {
 const taskPush = (input_content, input_jenre) => tasks.push({ content: input_content, jenre: input_jenre });
 const taskLists = () => {
   console.log(title);
-  tasks.forEach((task) => console.log(`${tasks.indexOf(task) } : [内容]${task.content} [ジャンル]${task.jenre}`));
+  tasks.forEach((task,index) => console.log(`${index} : [内容]${task.content} [ジャンル]${task.jenre}`));
 };
 
 taskLists();
